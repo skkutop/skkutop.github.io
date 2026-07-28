@@ -6,6 +6,7 @@
     <title>Games — In progress</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="game.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -14,15 +15,36 @@
         <span class="sr-only">Open navigation</span><span aria-hidden="true">Menu</span>
       </button>
       <nav id="site-navigation" class="site-nav" aria-label="Primary navigation">
-        <a href="index.html#work">Work</a>
-        <a href="index.html#profile">Profile</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
         <a class="games-link" href="games.html" aria-current="page">Games <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
-    <main class="game-placeholder">
+    <main class="game-page">
       <p class="terminal-prompt" aria-hidden="true">games/01</p>
       <h1>Snake protocol</h1>
-      <p>The keyboard and touch game is the next development loop.</p>
+      <p class="game-intro">Collect signal nodes, avoid the wall and the roaming fault. Arrow keys, WASD, or the touch controls steer the snake.</p>
+      <section class="game-shell" aria-labelledby="game-title">
+        <h2 id="game-title" class="sr-only">Snake game</h2>
+        <div class="game-hud" aria-label="Game score board">
+          <p>Score <strong id="score">0</strong></p>
+          <p>Best <strong id="high-score">0</strong></p>
+          <p id="game-status" role="status" aria-live="polite">Ready</p>
+        </div>
+        <canvas id="snake-board" width="480" height="480" aria-label="Snake game board. Use arrow keys, WASD, or the controls below to play."></canvas>
+        <div class="game-actions">
+          <button id="start-game" type="button">Start</button>
+          <button id="pause-game" type="button" disabled>Pause</button>
+          <button id="restart-game" type="button">Restart</button>
+        </div>
+        <div class="touch-controls" aria-label="Touch direction controls">
+          <button type="button" data-direction="up" aria-label="Move up">↑</button>
+          <button type="button" data-direction="left" aria-label="Move left">←</button>
+          <button type="button" data-direction="down" aria-label="Move down">↓</button>
+          <button type="button" data-direction="right" aria-label="Move right">→</button>
+        </div>
+      </section>
       <a class="text-action" href="index.html">Return home <span aria-hidden="true">←</span></a>
     </main>
   </body>
