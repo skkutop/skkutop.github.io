@@ -25,6 +25,11 @@
       <p class="terminal-prompt" aria-hidden="true">arcade / player one</p>
       <h1>Snake protocol</h1>
       <p class="game-intro">Collect signal nodes. Avoid the wall and the roaming fault. Arrow keys, WASD, or the control pad steer the snake.</p>
+      <ul class="game-brief" aria-label="Game briefing">
+        <li><strong>Mission</strong><span>Collect the pink signal nodes and extend the line.</span></li>
+        <li><strong>Hazard</strong><span>The amber fault moves faster as your score climbs.</span></li>
+        <li><strong>Controls</strong><span>Use arrows, WASD, or the on-screen direction pad.</span></li>
+      </ul>
       <section class="game-shell arcade-cabinet" aria-labelledby="game-title">
         <h2 id="game-title" class="sr-only">Snake game</h2>
         <div class="game-hud arcade-hud" aria-label="Game score board">
@@ -44,6 +49,11 @@
           <button type="button" data-direction="down" aria-label="Move down">↓</button>
           <button type="button" data-direction="right" aria-label="Move right">→</button>
         </div>
+      </section>
+      <section class="arcade-notes" aria-labelledby="arcade-notes-title">
+        <p class="terminal-prompt" aria-hidden="true">field notes</p>
+        <h2 id="arcade-notes-title">A small game with a quick loop</h2>
+        <p>Start when you are ready, make one deliberate turn at a time, and use Restart to begin a fresh run. The high score stays on this device whenever browser storage is available.</p>
       </section>
       <a class="text-action" href="index.html">Return home <span aria-hidden="true">←</span></a>
     </main>
