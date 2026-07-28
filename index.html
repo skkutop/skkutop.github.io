@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A personal professional website in progress.">
+    <title>Portfolio — In progress</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Homepage">X_<span aria-hidden="true">.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="sr-only">Open navigation</span><span aria-hidden="true">Menu</span>
+      </button>
+      <nav id="site-navigation" class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#profile">Profile</a>
+        <a class="games-link" href="games.html">Games <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="terminal-prompt" aria-hidden="true">~/portfolio</p>
+          <h1 id="hero-title">Your name</h1>
+          <p class="role">Role / short statement</p>
+          <p class="intro">Profile details pending.</p>
+          <a class="text-action" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
+        </div>
+        <section class="status-panel" aria-label="Project status">
+          <div class="panel-title"><span class="status-light" aria-hidden="true"></span>project-status.log</div>
+          <ul>
+            <li><span>system.init()</span><b>ok</b></li>
+            <li><span>environment.check()</span><b>ok</b></li>
+            <li><span>workspace.load()</span><b>ok</b></li>
+            <li><span>design.sync()</span><b>ok</b></li>
+            <li><span>deploy.preview()</span><b class="pending">pending</b></li>
+          </ul>
+          <p class="panel-footer"><span>status:</span> in progress<span class="cursor" aria-hidden="true"></span></p>
+        </section>
+      </section>
+
+      <section id="work" class="section work-section" aria-labelledby="work-title">
+        <div class="section-heading"><p class="terminal-prompt" aria-hidden="true">01</p><h2 id="work-title">Selected work</h2></div>
+        <p class="empty-state">Project details will appear here when verified source material is available.</p>
+      </section>
+
+      <section id="profile" class="section profile-section" aria-labelledby="profile-title">
+        <div class="section-heading"><p class="terminal-prompt" aria-hidden="true">02</p><h2 id="profile-title">Profile</h2></div>
+        <p class="empty-state">Profile details pending.</p>
+      </section>
+    </main>
+  </body>
+</html>
