@@ -21,19 +21,19 @@
         <a class="games-link" href="games.html" aria-current="page">Games <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
-    <main class="game-page">
-      <p class="terminal-prompt" aria-hidden="true">games/01</p>
+    <main class="game-page arcade-page">
+      <p class="terminal-prompt" aria-hidden="true">arcade / player one</p>
       <h1>Snake protocol</h1>
-      <p class="game-intro">Collect signal nodes, avoid the wall and the roaming fault. Arrow keys, WASD, or the touch controls steer the snake.</p>
-      <section class="game-shell" aria-labelledby="game-title">
+      <p class="game-intro">Collect signal nodes. Avoid the wall and the roaming fault. Arrow keys, WASD, or the control pad steer the snake.</p>
+      <section class="game-shell arcade-cabinet" aria-labelledby="game-title">
         <h2 id="game-title" class="sr-only">Snake game</h2>
-        <div class="game-hud" aria-label="Game score board">
+        <div class="game-hud arcade-hud" aria-label="Game score board">
           <p>Score <strong id="score">0</strong></p>
           <p>Best <strong id="high-score">0</strong></p>
           <p id="game-status" role="status" aria-live="polite">Ready</p>
         </div>
         <canvas id="snake-board" width="480" height="480" aria-label="Snake game board. Use arrow keys, WASD, or the controls below to play."></canvas>
-        <div class="game-actions">
+        <div class="game-actions arcade-actions">
           <button id="start-game" type="button">Start</button>
           <button id="pause-game" type="button" disabled>Pause</button>
           <button id="restart-game" type="button">Restart</button>

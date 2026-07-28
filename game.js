@@ -121,17 +121,17 @@
   }
 
   function draw() {
-    context.fillStyle = '#050508';
+    context.fillStyle = '#040611';
     context.fillRect(0, 0, canvas.width, canvas.height);
-    context.strokeStyle = 'rgba(140,120,255,.09)';
+    context.strokeStyle = 'rgba(0,223,255,.16)';
     context.lineWidth = 1;
     for (let line = 0; line <= cells; line += 1) {
       context.beginPath(); context.moveTo(line * size, 0); context.lineTo(line * size, canvas.height); context.stroke();
       context.beginPath(); context.moveTo(0, line * size); context.lineTo(canvas.width, line * size); context.stroke();
     }
-    drawCell(food, '#f0d9ff', 5);
-    drawCell(enemy, '#ff5f7a', 3);
-    snake.forEach((part, index) => drawCell(part, index === 0 ? '#b6a7ff' : '#7c68ee', 2));
+    drawCell(food, '#ff4abf', 5);
+    drawCell(enemy, '#ffc14a', 3);
+    snake.forEach((part, index) => drawCell(part, index === 0 ? '#8ff5ff' : '#11d9f3', 2));
   }
 
   function start() {
